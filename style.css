@@ -1,0 +1,772 @@
+body {
+    background: linear-gradient(to bottom, #000000, #087b9e, #00222c);
+    font-family: "Google Sans", Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    width: 100px;
+}
+
+.botaonavdiv {
+    display: flex;
+    justify-content: center;
+}
+
+.botaonav {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    background: #002f3d;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black;
+    gap: 5px;
+    padding: 10px 5px;
+    border: 2px solid rgb(199, 147, 5);
+}
+
+nav ul li a i {
+    font-size: 35px;
+    margin-left: 75px;
+}
+
+.colunaimg img {
+    width: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.colunagaleria img {
+    width: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#divsobre {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#divsobre h2 {
+    color: rgb(255, 192, 20);
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+    bottom: -10px;
+}
+
+#imgdestaque {
+    font-size: 27px;
+    font-style: italic;
+    background: rgba(0, 0, 0, 0.244);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.sobrejogo,
+.sobremim {
+    width: 90%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.598);
+    border-radius: 15px;
+}
+
+.sobrejogo p,
+.sobremim p {
+    font-size: 19px;
+    line-height: 1.3;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 8px 0px;
+    border-radius: 10px;
+}
+
+.gridimg {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    gap: 30px;
+    margin: 10px;
+}
+
+.gridgaleria {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    gap: 30px;
+    margin: 10px;
+}
+
+.historiajogo {
+    background: rgba(0, 0, 0, 0.642);
+    border-radius: 10px;
+    padding: 5px 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.historiajogo p {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.jogarbtn {
+    text-align: center;
+    background: rgba(105, 105, 105, 0.388);
+    margin: 20px;
+    padding: 5px 50px 10px 50px;
+    border-radius: 15px;
+}
+
+.play {
+    font-size: 37px;
+    border-radius: 10px;
+    background: green;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+#imgdojogo {
+    font-size: 30px;
+}
+
+#formulario {
+    background: linear-gradient(rgba(5, 5, 5, 0.700), rgba(12, 12, 12, 0.700)), url(imagens/imagem3.png);
+    background-size: cover;
+    width: 93%;
+    padding: 10px;
+    gap: 5px;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulariobtn button {
+    width: 150px;
+    height: 45px;
+    border-radius: 20px;
+    margin: 7px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.inputsform {
+    width: 96%;
+    border-radius: 15px;
+    height: 25px;
+    border: 5px solid #00222c;
+}
+
+.labelsform,
+#textareah1 {
+    font-size: 18px;
+}
+
+textarea {
+    border-radius: 15px;
+    width: 96%;
+    height: 70px;
+    border: 3px solid #00222c;
+}
+
+.personadiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.personadiv p {
+    font-size: 22px;
+    background: #00222c7f;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 5px;
+    width: 96%;
+}
+
+.personadiv h1 {
+    background: rgba(0, 0, 0, 0.283);
+    padding: 10px;
+    border-radius: 10px;
+    width: 93%;
+    text-align: center;
+}
+
+.personadiv ul li {
+    font-size: 23px;
+    line-height: 2.0;
+    margin: 5px;
+    padding: 5px;
+    background: #00222c7f;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: rgb(199, 147, 5);
+}
+
+footer p {
+    text-align: center;
+    font-size: medium;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 4px 20px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    background: #023544;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav {
+    display: none;
+}
+
+nav.ativo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.jogodiv iframe {
+    display: none;
+}
+
+#coinsnovaguia {
+    display: none;
+}
+
+#bodyjogo {
+    background: linear-gradient(to bottom, #000000, #000000, #00222c);
+}
+
+#disponivelpc {
+    background:#075770;
+    text-align: center;
+}
+
+#disponivelpc h1 {
+    color: #ffffff;
+}
+
+#disponivelpcimg {
+    text-align: center;
+}
+
+#disponivelpcimg img {
+    width: 100%;
+}
+/* ===== CSS PARA PC ===== */
+
+@media (min-width: 769px) {
+
+    body {
+        background: linear-gradient(to bottom, #000000, #087b9e, #00222c);
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    header h5 {
+        background: rgba(0, 0, 0, 0.605);
+        width: 280px;
+        margin: 0 auto;
+        border-radius: 5px;
+        position: relative;
+        top: 10px;
+    }
+    .botaonav {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        background: transparent;
+        margin: 0px auto;
+        border-radius: 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: 810px;
+        height: 45px;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: none;
+    }
+
+    nav ul li a {
+        width: 117px;
+        font-size: 25px;
+        color: rgb(0, 0, 0);
+        transition: all 0.5s;
+        background: none;
+        text-shadow: 0px 0px 5px black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        gap: 5px;
+        border: 1px solid #444;
+        border-radius: 20px;
+        padding: 5px 10px;
+        backdrop-filter: blur(10px);
+    }
+
+    nav ul li a i {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    nav ul li a:hover {
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 5px #b5b5b5;
+        box-shadow: 0px 0px 15px #00ffff;
+        background: #027497;
+    }
+
+    
+
+    #divsobre {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        width: 75%;
+        background: url(imagens/divfundo2.jpg);
+        border-radius: 15px;
+        padding: 20px;
+        background-size: 85%;
+        justify-content: center;
+    }
+
+    #divsobre .sobrejogo h2 {
+        color: rgb(255, 192, 20);
+        font-weight: bold;
+        letter-spacing: 1px;
+        position: relative;
+        bottom: 33px;
+    }
+
+    #divsobre .sobremim h2 {
+        color: rgb(255, 192, 20);
+        font-weight: bold;
+        letter-spacing: 1px;
+        position: relative;
+        bottom: 40px;
+
+    }
+
+    .sobrejogo {
+        width: 500px;
+        min-height: 300px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.753);
+        margin: 10px;
+        border-radius: 15px;
+        padding: 0;
+        backdrop-filter: blur(6px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .sobremim {
+        width: 500px;
+        height: 313px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.753);
+        margin: 10px;
+        border-radius: 15px;
+        padding: 0;
+        backdrop-filter: blur(6px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+
+    }
+
+    .sobrejogo p,
+    .sobremim p {
+        font-size: 16px;
+        background: none;
+        line-height: 1.2;
+        color: #eee;
+        position: relative;
+        bottom: 50px;
+        padding: 4px;
+    }
+
+    
+    #divhistoria {
+        padding: 20px;
+        margin: 10px 15px 0px 15px;
+    }
+
+    .historiajogo {
+        border-radius: 20px;
+        background: #00000092;
+    }
+
+    .historiajogo p {
+        text-shadow: 0px 0px 5px black;
+        background: rgba(0, 0, 0, 0.212);
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    #imgdojogo {
+        margin-bottom: 10px;
+    }
+
+    .gridimg {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 50px;
+        padding: 10px;
+    }
+
+    .colunaimg img {
+        width: 100%;
+        transition: transform 0.5s;
+    }
+
+    .colunaimg img:hover {
+        transform: scale(1.07);
+    }
+
+    .gridgaleria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .colunagaleria {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        background: none;
+        padding: 18px 0;
+        border-radius: 10px;
+    }
+
+    .colunagaleria img {
+        width: 80%;
+        transition: transform 0.5s;
+        border: 30px solid rgba(0, 0, 0, 0.194);
+        border-radius: 20px;
+    }
+
+    .colunagaleria img:hover {
+        transform: scale(1.07);
+    }
+
+    #imgdestaque {
+        position: relative;
+        top: 5px;
+        background: rgba(0, 0, 0, 0.457);
+        border-radius: 20px;
+        padding: 5px 15px;
+    }
+
+    main h2 {
+        margin-top: 50px;
+    }
+
+    .mainsobre {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #formulario {
+        background: rgba(0, 0, 0, 0.32);
+        background-size: cover;
+        width: 40%;
+        padding: 10px;
+        display: block;
+        gap: 0;
+        text-align: none;
+        border-radius: 15px;
+        margin: 50px;
+        height: 300px;
+    }
+
+    .formulariobtn {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 15px;
+    }
+    
+    .formulariobtn button {
+        width: 115px;
+        height: 35px;
+        margin: 0 auto;
+        transition: transform 0.4s,background 0.7s;
+    }
+
+    .formulariobtn button:hover {
+        background: #3391ae;
+        transform: scale(1.05);
+    }
+
+    .inputsform {
+        width: 80%;
+        border-radius: 15px;
+        padding: 0;
+        border: 5px solid #00222c;
+    }
+
+    .labelsform,
+    #textareah1 {
+        font-size: 13px;
+    }
+
+    textarea {
+        border-radius: 15px;
+        width: 100%;
+        border: 3px solid #00222c;
+        position: relative;
+        right: 5px;
+    }
+
+    .personadiv {
+        width: 40%;
+    }
+
+    .personadiv ul li {
+        font-size: 15px;
+        line-height: 2.0;
+        margin: 5px;
+        padding: 5px;
+        background: #00222c7f;
+        border-radius: 5px;
+        font-style: italic;
+    }
+
+    
+    .personadiv p {
+        font-size: 15px;
+        background: #00222c7f;
+        border-radius: 10px;
+        padding: 5px;
+        margin-right: 5px;
+        width: 96%;
+    }
+
+    .personadiv h1 {
+        background: rgba(0, 0, 0, 0.215);
+        padding: 10px;
+        border-radius: 10px;
+        width: 123px;
+        text-align: center;
+        position: relative;
+        top: 20px;
+    }
+
+    .jogarbtn {
+        display: block;
+        background: rgba(210, 210, 210, 0.295);
+        width: 275px;
+        height: 120px;
+    }
+
+    .jogarbtn h2 {
+        color: rgb(255, 255, 255);
+        font-style: italic;
+        position: relative;
+        bottom: 45px;
+        font-size: 30px;
+        background: rgba(205, 205, 205, 0.349);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .play {
+        font-size: 30px;
+        border-radius: 20px;
+        background: green;
+        border: 5px solid black;
+        margin: 5px;
+        position: relative;
+        bottom: 65px;
+    }
+    
+    .play {
+        transition: transform 0.7s, background 0.7s;
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    .play:hover {
+        background: rgb(174, 42, 226);
+        transform: scale(1.1);
+        color: white;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 50px;
+        margin-right: 50px;
+        border-radius: 10px 10px 0px 0px;
+        gap: 15px;
+    }
+
+    footer ul {
+        text-align: center;
+        margin-left: 30px;
+    }
+
+    footer ul li {
+        text-align: center;
+    }
+
+    footer ul li a {
+        margin-top: 2px;
+        transition: all 0.5s;
+    }
+
+    footer ul li a:hover {
+        background: #027497;
+    }
+
+    .jogodiv iframe {
+        display: block;
+        width: 100%;
+        height: 400px;
+        margin-top: 20px;
+    }
+     
+    #bodyjogo {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        background: url(imagens/imagem10.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }
+
+    .btnjogar {
+        text-align: center;
+        margin-top: 280px;
+    }
+
+    #coinsnovaguia {
+        display: inline-block;
+        color: rgb(232, 232, 232);
+        text-shadow: 0px 0px 5px black;
+        background: rgb(17, 210, 20);
+        padding: 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 40px;
+        transition: background 0.7s, transform 0.7s;
+        border: 3px solid black;
+
+    }
+
+    #coinsnovaguia:hover {
+        background: rgb(174, 42, 226);
+        color: white;
+        transform: scale(1.2);
+    }
+
+    #bodyhistoria {
+        margin: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(imagens/imagem11.png);
+        background-size: cover;
+    }
+
+    #disponivelpc {
+        display: none;
+    }
+
+    #disponivelpcimg {
+        display: none;
+    }
+
+    
+
+
+    
+
+    
+
+    
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coins Website</title>
+    <link rel="icon" href="imagens/logosite.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/8165c50b74.js" crossorigin="anonymous"></script>
+    <header>
+        <a href="index.html" title="Coins">
+            <img src="imagens/logosite.png" alt="CoinsLogo">
+        </a>
+        <h5>O jogo onde tudo gira em torno de moedas.</h5>
+
+    </header>
+    <div class="botaonavdiv">
+        <button class="botaonav">
+            <i class="fa-solid fa-bars"></i>
+            Menu
+        </button>
+    </div>
+    
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" title="Início"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li>
+                <a href="historia.html" title="História do jogo"><i class="fa-solid fa-book"></i>História</a>
+            </li>
+            <li>
+                <a href="jogo.html" title="Página do jogo"><i class="fa-solid fa-gamepad"></i>O jogo</a>
+            </li>
+            <li>
+                <a href="galeria.html" title="Galeria"><i class="fa-solid fa-image"></i>Galeria</a>
+            </li>
+            <li>
+                <a href="sobre.html" title="Sobre o site"><i class="fa-solid fa-circle-info"></i>Sobre</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="divsobre">
+            <div class="sobrejogo">
+                <h2>Sobre o jogo</h2>
+                <p>Coins é um jogo de reflexo e agilidade onde o objetivo é coletar o máximo de moedas possível enquanto desvia de
+                    monstros pelo caminho.</p>
+                <p>À medida que o tempo passa, a dificuldade aumenta, exigindo mais agilidade, atenção e precisão do
+                    jogador.</p>
+                <p>Cada partida é uma oportunidade de superar seus próprios limites e alcançar pontuações cada vez
+                    maiores.</p>
+            </div>
+
+            <div class="sobremim">
+                <h2>Sobre mim</h2>
+                <p>Meu nome é Ismael Kuasnecha Vidal, criador deste site e do jogo Coins.</p>
+                <p>Sou um desenvolvedor iniciante apaixonado por tecnologia e jogos.</p>
+                <p>Criei Coins como parte do meu aprendizado, buscando evoluir em programação e criar algo divertido.
+                </p>
+            </div>
+        </div>
+
+        <h2 id="imgdestaque">Imagens em destaque</h2>
+        <!-----------------Grid=Imagens---------------------->
+        <div class="gridimg">
+            <div class="colunaimg">
+                <img src="imagens/imagem4.png" alt="">
+
+            </div>
+            <!----------------------------------------------->
+            <div class="colunaimg">
+                <img src="imagens/imagem5.png" alt="">
+
+            </div>
+            <!----------------------------------------------->
+            <div class="colunaimg">
+                <img src="imagens/imagem7.png" alt="">
+
+            </div>
+            <!----------------------------------------------->
+        </div>
+
+        <div class="jogarbtn">
+            <h2>Jogue Agora</h2>
+            <a href="jogo.html"><button class="play">Página do jogo</button></a>
+        </div>
+    
+    </main>
+
+    <footer>
+        <p>© 2026 - Todos os direitos reservados.</p>
+        <p>Desenvolvido por Ismael - <strong>Versão: 1.0.0</strong></p>
+        <ul>
+            <li>
+                <a id="testebtn" href="https://www.instagram.com" title="Instagram" target="_blank"><i
+                        class="fa-brands fa-instagram"></i>Instagram</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com" title="facebook" target="_blank"><i
+                        class="fa-brands fa-facebook"></i>Facebook</a>
+            </li>
+        </ul>
+
+    </footer>
+
+    <script>
+        let btn = document.querySelector(".botaonav")
+        let nav = document.querySelector("nav")
+        btn.addEventListener("click", function () {
+            nav.classList.toggle("ativo")
+
+        })
+
+    </script>
+
+</body>
+
+</html>

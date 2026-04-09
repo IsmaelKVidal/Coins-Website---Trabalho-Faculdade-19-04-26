@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coins Website</title>
+    <link rel="icon" href="imagens/logosite.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/8165c50b74.js" crossorigin="anonymous"></script>
+    <header>
+        <a href="index.html" title="Coins">
+            <img src="imagens/logosite.png" alt="CoinsLogo">
+        </a>
+        <h5>O jogo onde tudo gira em torno de moedas.</h5>
+
+    </header>
+    <div class="botaonavdiv">
+        <button class="botaonav">
+            <i class="fa-solid fa-bars"></i>
+            Menu
+        </button>
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" title="Início"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li>
+                <a href="historia.html" title="História do jogo"><i class="fa-solid fa-book"></i>História</a>
+            </li>
+            <li>
+                <a href="jogo.html" title="Página do jogo"><i class="fa-solid fa-gamepad"></i>O jogo</a>
+            </li>
+            <li>
+                <a href="galeria.html" title="Galeria"><i class="fa-solid fa-image"></i>Galeria</a>
+            </li>
+            <li>
+                <a href="sobre.html" title="Sobre o site"><i class="fa-solid fa-circle-info"></i>Sobre</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="mainsobre">
+        
+        <form id="formulario" name="form-coins" method="get" action="">
+            <h1 id="sugestaoh1">Deixe uma sugestão</h1>
+            <label class="labelsform" for="nome"><strong>NOME</strong></label>
+            <input class="inputsform" type="text" name="nome" id="nome" required placeholder="Digite seu nome">
+            <br><br>
+
+            <label class="labelsform" for="email"><strong>E-MAIL</strong></label>
+            <input class="inputsform" type="email" name="Email" id="email" required placeholder="Digite seu e-mail"
+                inputmode="email">
+            <br><br>
+
+            <label id="textareah1" for="mensagem"><strong>MENSAGEM</strong></label>
+            <br>
+            <textarea name="Mensagem" id="mensagem" required placeholder="Digite sua mensagem..."></textarea>
+            <br><br>
+
+            <div class="formulariobtn">
+                <button type="submit">Enviar</button>
+                <br>
+                <button type="reset">Redefinir</button>
+            </div>
+        </form>
+
+        <section class="personadiv">
+            <h1>Persona</h1>
+            <ul>
+                <p><strong>Nome: Lucas <br><br> Idade: 15 anos</strong></p>
+                <li>Gosta de jogos rápidos e desafiadores</li>
+                <li>Curte pegar pontos, bater recordes e melhorar habilidades</li>
+                <li>Joga 1-2h por dia no PC</li>
+                <li>Principal demanda: se divertir testando reflexos e agilidade, competindo contra si mesmo</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Todos os direitos reservados.</p>
+        <p>Desenvolvido por Ismael - <strong>Versão: 1.0.0</strong></p>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com" title="Instagram" target="_blank"><i
+                        class="fa-brands fa-instagram"></i>Instagram</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com" title="facebook" target="_blank"><i
+                        class="fa-brands fa-facebook"></i>Facebook</a>
+            </li>
+        </ul>
+
+    </footer>
+
+    <script>
+        const btn = document.querySelector(".botaonav")
+        const nav = document.querySelector("nav")
+        btn.addEventListener("click", function () {
+            nav.classList.toggle("ativo")
+        })
+
+        const form = document.getElementById("formulario")
+        form.addEventListener("submit", function (evento) {
+            evento.preventDefault()
+            const nome = document.getElementById("nome").value
+            const email = document.getElementById("email").value
+            const mensagem = document.getElementById("mensagem").value
+            alert("Seu nome é: " + nome + "\nSeu e-mail é: " + email + "\nSua mensagem: " + mensagem + "\n\nObrigado pela sugestão")
+
+        })
+    </script>
+
+</body>
+
+</html>

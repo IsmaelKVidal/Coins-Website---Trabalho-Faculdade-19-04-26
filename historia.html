@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coins Website</title>
+    <link rel="icon" href="imagens/logosite.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="bodyhistoria">
+    <script src="https://kit.fontawesome.com/8165c50b74.js" crossorigin="anonymous"></script>
+    <header>
+        <a href="index.html" title="Coins">
+            <img src="imagens/logosite.png" alt="CoinsLogo">
+        </a>
+        <h5>O jogo onde tudo gira em torno de moedas.</h5>
+
+    </header>
+    <div class="botaonavdiv">
+        <button class="botaonav">
+            <i class="fa-solid fa-bars"></i>
+            Menu
+        </button>
+    </div>
+    
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" title="Início"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li>
+                <a href="historia.html" title="História do jogo"><i class="fa-solid fa-book"></i>História</a>
+            </li>
+            <li>
+                <a href="jogo.html" title="Página do jogo"><i class="fa-solid fa-gamepad"></i>O jogo</a>
+            </li>
+            <li>
+                <a href="galeria.html" title="Galeria"><i class="fa-solid fa-image"></i>Galeria</a>
+            </li>
+            <li>
+                <a href="sobre.html" title="Sobre o site"><i class="fa-solid fa-circle-info"></i>Sobre</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <div id="divhistoria">
+            <div class="historiajogo">
+                <h2>A jornada de Kael</h2>
+
+                <p>Em um mundo onde o valor de tudo é medido em moedas, existe um jovem chamado Kael.</p>
+
+                <p>Ninguém sabe exatamente como começou… mas, de repente, moedas começaram a cair do céu. No início,
+                    parecia sorte. Uma chance rara de riqueza fácil. Mas junto com elas…algo mais também veio.</p>
+
+                <p>Criaturas sombrias começaram a surgir.</p>
+
+
+                <p>Esses monstros são atraídos pelas moedas, ou talvez pelo próprio Kael.</p>
+
+                <p>Agora, preso nesse ciclo estranho, Kael precisa correr, coletar o máximo de moedas possível e
+                    sobreviver ao caos que cai dos céus. Quanto mais ele resiste, mais difícil tudo fica. Mais moedas.
+                    Mais monstros. Mais perigo.</p>
+
+                <p><strong>Não existe fim.</strong></p>
+
+                <p><strong>Só existe um objetivo:</strong></p>
+
+                <p><strong>Ir além.</strong></p>
+
+                <p><strong>Bater seu próprio recorde.</strong></p>
+
+                <p><strong>E sobreviver… por mais um pouco.</strong></p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        
+        <p>© 2026 - Todos os direitos reservados.</p>
+        <p>Desenvolvido por Ismael - <strong>Versão: 1.0.0</strong></p>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com" title="Instagram" target="_blank"><i
+                        class="fa-brands fa-instagram"></i>Instagram</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com" title="facebook" target="_blank"><i
+                        class="fa-brands fa-facebook"></i>Facebook</a>
+            </li>
+        </ul>
+
+    </footer>
+
+    <script>
+        let btn = document.querySelector(".botaonav")
+        let nav = document.querySelector("nav")
+        btn.addEventListener("click", function () {
+            nav.classList.toggle("ativo")
+        })
+
+    </script>
+
+</body>
+
+</html>

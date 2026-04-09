@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coins Website</title>
+    <link rel="icon" href="imagens/logosite.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/8165c50b74.js" crossorigin="anonymous"></script>
+    <header>
+        <a href="index.html" title="Coins">
+            <img src="imagens/logosite.png" alt="CoinsLogo">
+        </a>
+        <h5>O jogo onde tudo gira em torno de moedas.</h5>
+
+    </header>
+    <div class="botaonavdiv">
+        <button class="botaonav">
+            <i class="fa-solid fa-bars"></i>
+            Menu
+        </button>
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" title="Início"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li>
+                <a href="historia.html" title="História do jogo"><i class="fa-solid fa-book"></i>História</a>
+            </li>
+            <li>
+                <a href="jogo.html" title="Página do jogo"><i class="fa-solid fa-gamepad"></i>O jogo</a>
+            </li>
+            <li>
+                <a href="galeria.html" title="Galeria"><i class="fa-solid fa-image"></i>Galeria</a>
+            </li>
+            <li>
+                <a href="sobre.html" title="Sobre o site"><i class="fa-solid fa-circle-info"></i>Sobre</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <H2 id="imgdojogo">Imagens do Jogo</H2>
+
+        <!-----------------Grid=Imagens---------------------->
+        <div class="gridgaleria">
+            <div class="colunagaleria">
+                <img src="imagens/imagem4.png" alt="">
+
+            </div>
+            <!------------------------------------------------------------------------->
+            <div class="colunagaleria">
+                <img src="imagens/imagem9.png" alt="">
+
+            </div>
+            <!------------------------------------------------------------------------->
+            <div class="colunagaleria">
+                <img src="imagens/imagem8.png" alt="">
+
+            </div>
+            <!------------------------------------------------------------------------->
+            <div class="colunagaleria">
+                <img src="imagens/imagem7.png" alt="">
+
+            </div>
+            <!------------------------------------------------------------------------->
+            <div class="colunagaleria">
+                <img src="imagens/imagem6.png" alt="">
+
+            </div>
+            <!------------------------------------------------------------------------->
+            <div class="colunagaleria">
+                <img src="imagens/imagem5.png" alt="">
+
+            </div>
+            <!------------------------------------------------------------------------->
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Todos os direitos reservados.</p>
+        <p>Desenvolvido por Ismael - <strong>Versão: 1.0.0</strong></p>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com" title="Instagram" target="_blank"><i
+                        class="fa-brands fa-instagram"></i>Instagram</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com" title="facebook" target="_blank"><i
+                        class="fa-brands fa-facebook"></i>Facebook</a>
+            </li>
+        </ul>
+
+    </footer>
+
+    <script>
+        let btn = document.querySelector(".botaonav")
+        let nav = document.querySelector("nav")
+        btn.addEventListener("click", function () {
+            nav.classList.toggle("ativo")
+        })
+
+    </script>
+
+</body>
+
+</html>
